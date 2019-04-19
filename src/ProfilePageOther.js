@@ -5,10 +5,10 @@ import ProfileInfo from "./components/ProfileInfo";
 import Footer from "./components/Footer";
 import './CSS/ProfilePage.css';
 
-class ProfilePage extends Component {
+class ProfilePageOther extends Component {
     constructor(props) {
         super(props);
-        this.otherUser = false;
+        this.otherUser = true;
     }
 
     render() {
@@ -23,4 +23,4 @@ class ProfilePage extends Component {
     }
 }
 
-export default ProfilePage;
+export default ProfilePageOther;

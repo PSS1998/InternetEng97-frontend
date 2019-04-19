@@ -86,21 +86,21 @@ class IndexInfo extends Component {
                                 <input type="text" placeholder="جستجو نام کاربر" name="search"/>
                             </form>
                         </div>
-                        <a href="http://localhost:3000/user"><div className="side-post">
+                        <a href="http://localhost:3000/user-other"><div className="side-post">
                             <img className="side-image" src={imgProfile1} alt="img"/>
                             <div className="side-content-div">
                                 <p className="side-content">صادق حائری</p>
                                 <p className="side-content">گیک</p>
                             </div>
                         </div></a>
-                        <a href="http://localhost:3000/user"><div className="side-post">
+                        <a href="http://localhost:3000/user-other"><div className="side-post">
                             <img className="side-image" src={imgProfile2} alt="img"/>
                             <div className="side-content-div">
                                 <p className="side-content">محمدرضا کیانی</p>
                                 <p className="side-content">چیف تی ای</p>
                             </div>
                         </div></a>
-                        <a href="http://localhost:3000/user"><div className="side-post">
+                        <a href="http://localhost:3000/user-other"><div className="side-post">
                             <img className="side-image" src={imgProfile3} alt="img"/>
                             <div className="side-content-div">
                                 <p className="side-content">آبتین باطنی</p>

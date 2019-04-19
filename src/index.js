@@ -6,6 +6,7 @@ import 'bootstrap/dist/js/bootstrap.min.js'
 import './CSS/index.css';
 import * as serviceWorker from './serviceWorker';
 import ProfilePage from "./ProfilePage";
+import ProfilePageOther from "./ProfilePageOther";
 import ProjectPage from "./ProjectPage";
 import RegisterPage from "./RegisterPage";
 import IndexPage from "./IndexPage";
@@ -24,6 +25,10 @@ function User() {
     return <ProfilePage />;
 }
 
+function UserOther() {
+    return <ProfilePageOther />;
+}
+
 function Register() {
     return <RegisterPage />;
 }
@@ -34,7 +39,8 @@ ReactDOM.render(    <Router>
     <div>
         <Route exact path="/" component={Home} />
         <Route path="/project" component={Project} />
-        <Route path="/user" component={User} />
+        <Route exact path="/user" component={User} />
+        <Route path="/user-other" component={UserOther} />
         <Route path="/register" component={Register} />
                         {/*<ProfilePage />*/}
                         {/*<ProjectPage />*/}

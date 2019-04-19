@@ -2,6 +2,44 @@ import React, { Component } from 'react';
 import imgProfile from '../img/jooj.jpg';
 import '../CSS/ProfileInfo.css';
 
+function Other(props) {
+    const otherUser = props.otherUser;
+    console.log(otherUser);
+    if (otherUser === false) {
+        return (
+            <span className="section-add-skill">
+                <h3>مهارت‌ها:</h3>
+                <div className="add-skill-block">
+                    <select className="add-skill-list">
+                        <option value="select">--انتخاب مهارت--</option>
+                        <option value="skill">Android</option>
+                        <option value="skill">C</option>
+                        <option value="skill">C++</option>
+                        <option value="skill">CSS</option>
+                        <option value="skill">Django</option>
+                        <option value="skill">HTML</option>
+                        <option value="skill">Java</option>
+                        <option value="skill">Javascript</option>
+                        <option value="skill">Linux</option>
+                        <option value="skill">MySQL</option>
+                        <option value="skill">Node.js</option>
+                        <option value="skill">Photoshop</option>
+                        <option value="skill">PHP</option>
+                        <option value="skill">Python</option>
+                        <option value="skill">React</option>
+                        <option value="skill">SEO</option>
+                        <option value="skill">SQL</option>
+                    </select>
+                    <input className="add-skill-btn" type="button" value="افزودن مهارت"/>
+                </div>
+            </span>
+        );
+    }
+    return (
+        <div><br/></div>
+    );
+}
+
 class ProfileInfo extends Component {
     constructor(props) {
         super(props);
@@ -15,6 +53,7 @@ class ProfileInfo extends Component {
         alert('Your favorite flavor is: ' + this.state.value);
         event.preventDefault();
     }
+
     render() {
         return (
             <section className="section">
@@ -28,36 +67,37 @@ class ProfileInfo extends Component {
                     بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در
                     این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد
                     وزمان</p>
-                <span className="section-add-skill">
-                    <h3>مهارت‌ها:</h3>
-                    <div className="add-skill-block">
-                        <form onSubmit={this.handleSubmit}>
-                            <label>
-                        <select value={this.state.value} className="add-skill-list" onChange={this.handleChange}>
-                            <option value="select">--انتخاب مهارت--</option>
-                            <option value="skill">Android</option>
-                            <option value="skill">C</option>
-                            <option value="skill">C++</option>
-                            <option value="skill">CSS</option>
-                            <option value="skill">Django</option>
-                            <option value="skill">HTML</option>
-                            <option value="skill">Java</option>
-                            <option value="skill">Javascript</option>
-                            <option value="skill">Linux</option>
-                            <option value="skill">MySQL</option>
-                            <option value="skill">Node.js</option>
-                            <option value="skill">Photoshop</option>
-                            <option value="skill">PHP</option>
-                            <option value="skill">Python</option>
-                            <option value="skill">React</option>
-                            <option value="skill">SEO</option>
-                            <option value="skill">SQL</option>
-                        </select>
-                                </label>
-                        <input className="add-skill-btn" type="button" value="افزودن مهارت"/>
-                        </form>
-                    </div>
-                </span>
+                <Other otherUser={this.props.otherUser} />
+                {/*<span className="section-add-skill">*/}
+                    {/*<h3>مهارت‌ها:</h3>*/}
+                    {/*<div className="add-skill-block">*/}
+                        {/*<form onSubmit={this.handleSubmit}>*/}
+                            {/*<label>*/}
+                        {/*<select value={this.state.value} className="add-skill-list" onChange={this.handleChange}>*/}
+                            {/*<option value="select">--انتخاب مهارت--</option>*/}
+                            {/*<option value="skill">Android</option>*/}
+                            {/*<option value="skill">C</option>*/}
+                            {/*<option value="skill">C++</option>*/}
+                            {/*<option value="skill">CSS</option>*/}
+                            {/*<option value="skill">Django</option>*/}
+                            {/*<option value="skill">HTML</option>*/}
+                            {/*<option value="skill">Java</option>*/}
+                            {/*<option value="skill">Javascript</option>*/}
+                            {/*<option value="skill">Linux</option>*/}
+                            {/*<option value="skill">MySQL</option>*/}
+                            {/*<option value="skill">Node.js</option>*/}
+                            {/*<option value="skill">Photoshop</option>*/}
+                            {/*<option value="skill">PHP</option>*/}
+                            {/*<option value="skill">Python</option>*/}
+                            {/*<option value="skill">React</option>*/}
+                            {/*<option value="skill">SEO</option>*/}
+                            {/*<option value="skill">SQL</option>*/}
+                        {/*</select>*/}
+                                {/*</label>*/}
+                        {/*<input className="add-skill-btn" type="button" value="افزودن مهارت"/>*/}
+                        {/*</form>*/}
+                    {/*</div>*/}
+                {/*</span>*/}
                 <div className="section-skills">
                     <ul className="skills-list">
                         <li className="skill-block">
@@ -82,5 +122,8 @@ class ProfileInfo extends Component {
         );
     }
 }
+
+
+
 
 export default ProfileInfo;
