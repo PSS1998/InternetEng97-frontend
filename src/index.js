@@ -9,6 +9,7 @@ import ProfilePage from "./ProfilePage";
 import ProfilePageOther from "./ProfilePageOther";
 import ProjectPage from "./ProjectPage";
 import RegisterPage from "./RegisterPage";
+import LoginPage from "./LoginPage";
 import IndexPage from "./IndexPage";
 import './fonts/iransans-fonts/fonts.scss';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -33,6 +34,10 @@ function Register() {
     return <RegisterPage />;
 }
 
+function Login() {
+    return <LoginPage />;
+}
+
 
 
 ReactDOM.render(    <Router>
@@ -42,7 +47,8 @@ ReactDOM.render(    <Router>
         <Route exact path="/user" component={User} />
         <Route path="/user-other" component={UserOther} />
         <Route path="/register" component={Register} />
-                        {/*<ProfilePage />*/}
+        <Route path="/login" component={Login} />
+        {/*<ProfilePage />*/}
                         {/*<ProjectPage />*/}
                         {/*<RegisterPage />*/}
                         {/*<IndexPage />*/}

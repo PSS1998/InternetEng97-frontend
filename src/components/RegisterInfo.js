@@ -7,7 +7,7 @@ import job5 from '../img/job-5.jpg';
 import '../CSS/RegisterInfo.css';
 
 
-class RegisterPage extends Component {
+class RegisterInfo extends Component {
     render() {
         return (
             <nav className="mynav nav-register">
@@ -42,4 +42,4 @@ class RegisterPage extends Component {
 }
 
 
-export default RegisterPage;
+export default RegisterInfo;
