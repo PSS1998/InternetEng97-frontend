@@ -1,0 +1,39 @@
+.mynav{
+    margin-top: 60px;
+}
+
+.nav-project{
+    background: #b9eff2;
+    height: 100px;
+}
+
+.nav-profile{
+    background: #b9eff2;
+    height: 160px;
+}
+
+.nav-register{
+    background: #000000;
+    min-height: calc(100vh - 60px);
+}
+
+.nav-profile-svg{
+    position: absolute;
+    right: 200px;
+    top: 190px;
+    width: 300px;
+    height: 35px;
+}
+
+.nav-profile-svg polygon{
+    width: 300px;
+    height: 35px;
+}
+
+.nav-profile-svg .svg-dark{
+    fill: #6bc9ce;
+}
+
+.nav-profile-svg .svg-light{
+    fill: #6bc9ce80;
+}

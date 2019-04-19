@@ -1,0 +1,28 @@
+*{
+  font-family: IRANSans, serif;
+  font-style: normal;
+  font-weight: normal;
+  direction: rtl;
+}
+
+body{
+  margin: 0 0 0 0;
+}
+
+.footer {
+  display: flex;
+  height: 65px;
+  background: #363636;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer p{
+  text-align: center;
+  color: #878787;
+  text-shadow: 0 2px 4px #000000;
+  margin: 0;
+}
+
+
